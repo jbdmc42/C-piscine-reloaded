@@ -1,13 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: joaobarb <joaobarb@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/04 13:35:41 by joaobarb          #+#    #+#             */
+/*   Updated: 2025/04/04 13:58:00 by joaobarb         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
+
+void	ft_putchar(char c);
+/* {
+	write(1, &c, 1);
+} */
 
 void	ft_is_negative(int n)
 {
 	if (n < 0)
 	{
-		write(1, "N", 1);
+		ft_putchar('N');
 		return ;
 	}
-	write(1, "P", 1);
+	ft_putchar('P');
 }
 
 /* int	main(void)

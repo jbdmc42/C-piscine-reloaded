@@ -1,1 +1,1 @@
-find . -type f -name '*.sh' -print | sed 's|^\./||; s/\.sh//'
+find . -iname "*.sh" -type f -printf "%f\n" | sed 's/\.sh$//'

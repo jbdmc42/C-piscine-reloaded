@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: joaobarb <joaobarb@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/04 13:36:39 by joaobarb          #+#    #+#             */
+/*   Updated: 2025/04/04 14:21:27 by joaobarb         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /* #include <stdio.h> */
 
 int	ft_iterative_factorial(int nb)
@@ -9,7 +21,7 @@ int	ft_iterative_factorial(int nb)
 	i = 1;
 	if (nb < 0)
 		return (0);
-	if (nb == 0 || nb == 1)
+	if (nb == 0)
 		return (1);
 	while (i <= nb)
 	{
